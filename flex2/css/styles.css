@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  /*  align-tems is cross axis align  */
+  /*  Nothing changes after this  */
+  /*  Do with both flex-direction: row
+      and flex-direction: column  */
+  align-items: center;
+  /*  align-items: flex-start;    */
+  /*  align-items: flex-end;      */
+  /*  align-items: stretch;       */
+  /*  And a height: stretch;      */
+  background-color: fuchsia;
+  height: 50vh;
+  /*  Add a new line 11 with
+      flex-direction: column; 
+      and "run all" again. */
+  /*  justify-content is all
+      main axis align */
+      justify-content: center;
+      /*  justify-content: flex-start;      */
+      /*  justify-content: flex-end;        */
+      /*  justify-content: space-around;    */
+      /*  justify-content: space-between;   */
+}
+
+.item {
+  background: #f4f4f4;
+  border: #ccc solid 2px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/*  Then add this   */
+.item-1 {
+  align-self: flex-start;
+}
+
+/*  And then this   */
+.item-3 {
+  align-self: flex-end;
+}
+
